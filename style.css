@@ -3,16 +3,19 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
 body{
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	background-color: #7c7c7c;
+	color: white;
 }
 .wrapper{
 	background: url(./Images/Backidkyes.jpg) no-repeat;
 	background-size: cover;
     width: 100%;
-	height: 50vh;
+	height: 70vh;
 }
 .navbar{
 	position: fixed;
@@ -21,6 +24,7 @@ body{
 	top: 0;
 	left: 0;
 	background: rgb(0, 0, 0);
+	z-index: 1000;
 }
 
 .navbar .logo{
@@ -116,7 +120,7 @@ body{
     width: 100%;
     top: 80px;
     left: 0;
-    background: rgba(50, 50, 50, 0.9);
+    background: rgba(50, 50, 50);
     text-align: left;
     z-index: 999;
 }
@@ -199,18 +203,17 @@ body{
     font-size: 18px;
     margin: 20px 0;
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
     text-align: center;
 }
 
 .box img {
-    width: 100%; /* Make images responsive */
-    max-width: 300px; /* Limit max width */
+    width: 100%;
+    max-width: 300px; 
     height: auto;
     border-radius: 8px;
-    margin-bottom: 10px; /* Space between image and text */
+    margin-bottom: 10px; 
 }
 
 .box:hover {
@@ -220,15 +223,15 @@ body{
 
 .box:nth-child(1) {
     position: relative;
-    left: 40px; /* Moves Box 1 up */
+    left: 10%;
 }
 
 .box:nth-child(2) {
     position: relative;
-    right: 40px; /* Moves Box 2 down */
+    left: 60%; 
 }
 
 .box:nth-child(3) {
     position: relative;
-    left: 40px; /* Moves Box 3 further down */
+    left: 10%; 
 }
