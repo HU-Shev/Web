@@ -16,6 +16,7 @@ body{
 	background-size: cover;
     width: 100%;
 	height: 70vh;
+	filter: brightness(80%);
 }
 .navbar{
 	position: fixed;
@@ -180,58 +181,45 @@ body{
     color: white;
 }
 
-.content-section {
+.Pc-Build-home {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 50px 0;
-    background: #222;
-    margin-top: 20px;
-}
-
-.box {
-    width: 80%;
-    width: 500px;
-    height: 500;
-    background: rgb(50, 50, 50);
-    color: white;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    margin: 20px 0;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
     text-align: center;
+    height: 78vh;
+    color: white;
+    padding: 50px 20px;
 }
 
-.box img {
-    width: 100%;
-    max-width: 300px; 
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px; 
+.Pc-Build-home h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.box:hover {
-    background: rgb(200, 0, 0);
-    transform: scale(1.05);
+.Pc-Build-home p {
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.box:nth-child(1) {
-    position: relative;
-    left: 10%;
+.Pc-Build-home li {
+    list-style: none;
 }
 
-.box:nth-child(2) {
-    position: relative;
-    left: 60%; 
+.Pc-Build-home li a {
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    background: rgb(255, 0, 0);
+    border-radius: 10px;
 }
 
-.box:nth-child(3) {
-    position: relative;
-    left: 10%; 
+.Pc-Build-home li a:hover {
+    background: rgba(145, 0, 0, 0.8);
 }
