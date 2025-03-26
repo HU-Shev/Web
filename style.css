@@ -200,13 +200,9 @@ body{
 
 .Pc-Build-home p {
     max-width: 800px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 20px;
-}
-
-.Pc-Build-home li {
-    list-style: none;
 }
 
 .Pc-Build-home li a {
@@ -222,4 +218,142 @@ body{
 
 .Pc-Build-home li a:hover {
     background: rgba(145, 0, 0, 0.8);
+}
+
+.pre-builds-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    padding: 50px 20px;
+    flex-wrap: wrap; 
+}
+
+.pre-builds, .item_1, .item_2, .item3 {
+    width: 350px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pre-builds:hover, .item_1:hover, .item_2:hover, .item3:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7);
+}
+
+.pre-builds a.pre-builds-button {
+	padding: 12px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    background: rgb(255, 0, 0);
+    border-radius: 6px;
+	bottom: 5px;
+}
+
+.pre-builds p {
+    font-size: 20px;
+    top: 5px;
+}
+
+.shop-categories {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.shop-categories h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    width: 227px;
+	height: 227px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.category button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+.category button:hover {
+    color: red;
+}
+
+
+.guide-explainin {
+    text-align: center;
+    margin: 50px 0;
+    color: white;
+}
+
+.guide-button {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: red;
+    border: 2px solid red;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+	border-radius: 10px;
+}
+
+.guide-button:hover {
+    background: darkred;
+    border-color: darkred;
+}
+
+.guide-description {
+    font-size: 20px;
+    margin-top: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
 }
